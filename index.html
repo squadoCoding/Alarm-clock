@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="clock" class="bgBlack">
+    <div>
+      <span id="hours"></span><span>:</span><span id="minuts"></span><span>:</span><span id="seconds"></span>
+    </div>
+    <div id="buttons">
+      <button class="btn" id="viewAlarms">View Alarms</button>
+      <button class="btn" id="createAlarm">Create Alarm</button>
+    </div>
+    <div id="createAlarmContainer">
+      <label for="getAlarmTitle">
+        Title
+      </label>
+      <input type="text" id="getAlarmTitle" placeholder="Enter the title of your alarm" />
+      <label for="getAlarmRing">
+        Ring tone
+      </label>
+      <select id="getAlarmRing">
+        <option value="1">Ring tone 1</option>
+        <option value="2">Ring tone 2</option>
+        <option value="2">Ring tone 3</option>
+      </select>
+      <div id="alarmTime">
+        <div id="alarmAt">
+          <lable for="alarmAtTime">Alarm time</lable>
+          <input type="time" id="alarmAtTime" />
+        </div>
+      </div>
+      <div>
+        <button id="alarmCreatebtn">Create</button>
+        <button id="alarmCancelbtn">Cancel</button>
+      </div>
+    </div>
+    <div id="customAlert">
+    </div>
+    <script src="script.js"></script>
+    <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
